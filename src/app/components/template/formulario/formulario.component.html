@@ -1,0 +1,26 @@
+<form (ngSubmit) = "onSubmit()">
+
+<div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" name="name" id="nome" [(ngModel)]= "cliente.nome">
+</div>
+<div class="form-group">
+    <label for="celular">Celular</label>
+    <input type="text" class="form-control" name="celular" id="celular" [(ngModel)]= "cliente.celular">
+</div>
+<div class="form-group">
+    <label for="email">email</label>
+    <input type="text" class="form-control" name="email" id="email" [(ngModel)]= "cliente.email">
+</div>
+<div class="form-group">
+    <label for="assunto">Assunto</label>
+    <input type="text" class="form-control" name="assunto" id="assunto" [(ngModel)]= "cliente.assunto">
+</div>
+<div class="form-group">
+    <label for="mensagem">Mensagem</label>
+    <textarea  class=  "form-control" rows="5" cols="" name="mensagem" id="mensagem" [(ngModel)]= "cliente.mensagem"></textarea>
+
+    <input type="submit" class="btn btn-primary mt-4" value="Salvar">
+    <a href="#" class="btn btn-secondary mt-4 ml-2"> Cancelar</a>
+
+</form>
